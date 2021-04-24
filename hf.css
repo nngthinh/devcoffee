@@ -1,0 +1,263 @@
+@font-face {
+  font-family: scp;
+  src: url(fonts/SourceCodePro-Regular.ttf);
+}
+
+/* Element in header */
+header a,
+header a:hover {
+  text-decoration: none;
+}
+
+header .logo {
+  padding: 0px 1rem;
+}
+
+header .logo > img {
+  width: 100px;
+  min-height: 50px;
+}
+
+/* Nav bar*/
+header .navbar {
+  background-color: #222222;
+  height: 66px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar a {
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Nav links */
+/* Divide by direction, the same width -> logo is aligned center */
+
+
+#widescreen .navlinks-left,
+#widescreen .navlinks-right {
+  width: 500px;
+}
+
+#widescreen .navlinks-left * {
+  float: right;
+  margin-right: 5rem;
+}
+
+#widescreen .navlinks-right * {
+  float: left;
+  margin-left: 5rem;
+}
+
+/* Top mobile */
+
+#topmobile {
+  display: none;
+}
+
+/* Burger */
+#burger {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+#burger .burger_line {
+  width: 32px;
+  height: 3px;
+  max-height: 3px;
+  background-color: #ffffff;
+}
+
+#burger .burger_line::before,
+#burger .burger_line::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 3px;
+  max-height: 3px;
+  background-color: #ffffff;
+}
+
+#burger .burger_line::before {
+  transform: translateY(-8px);
+}
+#burger .burger_line::after {
+  transform: translateY(8px);
+}
+
+/* Burger animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #222222;
+}
+
+.footer { 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.about {
+  color: #222222;
+
+}
+
+/* Social media icon */
+
+footer .social {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .social a {
+  color: #222222;
+  text-decoration: none;
+}
+
+footer .social fa {
+  font-family: scp;
+  width: 10px!important;
+}
+
+
+footer .social h4 {
+  width: 100%;
+  color: #ea8025;
+}
+
+/* (*) Media query */
+/* Desktop first => max-width */
+@media screen and (max-width: 300px) {
+  /**/
+}
+
+@media only screen and (max-width: 450px) {
+  /**/
+}
+
+@media only screen and (max-width: 576px) {
+  /**/
+}
+
+@media only screen and (max-width: 768px) {
+  /**/
+  header {
+    position: relative;
+  }
+
+  #topmobile {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+  }
+
+  #topmobile > .logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 32px;
+  }
+
+  #widescreen {
+    position: fixed;
+    top: 66px;
+    bottom: 0px;
+    width: 300px;
+    height: calc(100% - 66px);
+    overflow-y: hidden;
+    padding: 0rem 0rem!important;
+    background-color: #222222;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 9999;
+  }
+
+  #widescreen .logo {
+    display: none;
+  }
+
+  #widescreen a {
+    display: block;
+    margin: 10px 0px;
+    padding: 0px;
+  }
+
+  #widescreen .navlinks-left,
+  #widescreen .navlinks-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Set opacity to 1 if it's in a childnode*/
+}
+
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+@media only screen and (max-width: 1200px) {
+  /**/
+  #widescreen .navlinks-left,
+  #widescreen .navlinks-right {
+    width: 275px;
+  }
+
+  #widescreen .navlinks-left * {
+    float: right;
+    margin-right: 2.5rem;
+  }
+
+  #widescreen .navlinks-right * {
+    float: left;
+    margin-left: 2.5rem;
+  }
+}
+
+/* (*) Clearfix */
+.navlinks::after,
+.clearfix {
+  content: " ";
+  display: table;
+}
+
+/* Buger's toggle */
+
+.bactive_nav {
+  transform: translateX(0%) !important;
+}
+
+.bactive_nav .navlinks-left *,
+.bactive_nav .navlinks-right * {
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
