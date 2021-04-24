@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
+body {
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+    font-family: "Source Code Pro", monospace;
+    letter-spacing: -0.05cm;
+    position: relative;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 300;
+    background-color: #ebedeb;
+}
+.fa {
+    padding: 5px;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    opacity: 35%;
+    color: black;
+  }
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  padding: 5px 0px;
+}
+a.page_list {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.currentpage {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 40%;
+}
+h2.product {
+  color: black;
+  font-weight: bold;
+}
+
+.price {
+  display: inline-block;
+  color: #EA8025;
+  font-weight: 700;
+  font-size: 24px;
+}
+input.buybutton{
+  background-color: #FFA747;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 32px;
+  font-weight: 950;
+  
+}
+img{
+  width: 450px;
+  height: 450px;
+}
+
+.info_display{
+  padding-top: 100px;
+}
+/*========= Non-Moblie First Method =========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	
+}
+/* Medium Devices, Desktop */
+@media only screen and (max-width: 992px) {
+  img{
+    width: 300px;
+    height: 300px;
+  }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .col-xs-6{
+    width: 100%;
+  }
+  img{
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.col-xs-6{
+    text-align: center;
+  }
+  .info_display{
+    padding-top: 10px;
+  }
+	}
+
+/* Extra Small Devices, Phone */
+@media only screen and (max-width: 480px) {
+  img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Custom, iphone retina */
+@media only screen and (max-width: 320px) {
+
+} 
+  

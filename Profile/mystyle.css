@@ -1,0 +1,12 @@
+.avt-profile{
+    text-align: center !important;
+    align-items: center !important;
+    width: 240px;
+    height: 240px;
+}
+.profile-picture2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
