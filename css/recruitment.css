@@ -1,0 +1,150 @@
+.banner-rec {
+   background-image: url("./images/coffee1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 0px !important;
+}
+.cover-rec {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   max-width: 100%;
+}
+.block-head-rec {
+   text-align: left;
+   display: block;
+   margin: 0px;
+   padding: 50px !important;
+}
+.bg-rec {
+   background-color: rgba(124, 124, 124, 0.4);
+}
+.btn-des {
+   background-color: darkgreen !important;
+   border-color: darkgreen !important;
+}
+
+.btn-h:hover {
+   background-color: rgb(8, 196, 33) !important;
+   border-color: rgb(8, 196, 33) !important;
+}
+
+.content-head {
+   font-family: "Source Code Pro", monospace;
+   text-shadow: 2px 2px 10px rgb(0, 0, 0);
+   color: white;
+   font-weight: bolder;
+}
+.header-title {
+   padding-top: 20px;
+   font-family: "Source Code Pro", monospace !important;
+   color: rgba(77, 76, 76, 0.856);
+   font-size: 2.5em;
+   font-weight: 700;
+}
+.content-title {
+   padding: 20px;
+   font-family: "Source Code Pro", monospace;
+   color: rgba(0, 0, 0, 0.856);
+   font-size: 1em;
+}
+.align_left {
+   text-align: left;
+}
+.pos-title {
+   background-image: url("/images/headerInTr.jpg");
+   background-attachment: inherit;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.pos-text {
+   padding: 0px 200px !important;
+}
+.pos-bgr {
+   background-color: rgba(124, 124, 124, 0.95);
+   padding: 0px 0px;
+}
+.block_text_pos {
+   text-align: center;
+   display: block;
+   margin: 0px;
+   padding: 40px 50px;
+   font-family: "Source Code Pro", monospace;
+}
+.pos_content {
+   display: block;
+   padding: 10px;
+   color: aliceblue;
+}
+.pos-rec-block {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   font-family: "Source Code Pro", monospace;
+}
+
+.pos-rec-h:hover {
+   background-color: rgba(124, 124, 124, 0.24);
+}
+
+.pos {
+   text-align: left;
+   width: 45%;
+   font-weight: 600;
+   font-size: 1.5em;
+   color: rgb(82, 82, 82);
+}
+.pos-info {
+   width: 35%;
+   text-align: right;
+   font-size: 0.8em;
+}
+.pos-apply {
+   width: 20%;
+   text-align: center;
+}
+.pos-name {
+   font-size: 2em;
+   font-weight: bold;
+   padding-left: 20px;
+   color: chocolate;
+}
+.pos-name-after::after {
+   content: "";
+   height: 2px;
+   background-color: rgba(51, 51, 51, 0.596);
+   display: block;
+   width: 100px;
+}
+
+.btn-apply {
+   border-radius: 50px !important;
+   font-size: 0.9em !important;
+}
+
+.pos-con {
+   margin: 0px;
+   padding: 0px 5px;
+}
+
+.upercase2 {
+   text-transform: uppercase;
+}
+
+.linkh:hover {
+   color: cadetblue;
+}
+
+@media screen and (max-width: 768px) {
+   .block-head-rec {
+      padding: 20px !important;
+   }
+   .pos-text {
+      padding: 0px 50px !important;
+   }
+   .btn-apply {
+      border-radius: 50px !important;
+      font-size: 0.7em !important;
+   }
+}
